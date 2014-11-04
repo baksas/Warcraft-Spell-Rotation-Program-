@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<ItemListItems xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SelectedItem>monk</SelectedItem>
+  <ClassList>
+    <WarcraftClass>
+      <Name>monk</Name>
+      <Spells>
+        <Spell>
+          <Name>chi_wave</Name>
+          <Color>2741/845</Color>
+          <Key>6</Key>
+        </Spell>
+        <Spell>
+          <Name>chi_brew</Name>
+          <Color>2203/1265</Color>
+          <Key>7</Key>
+        </Spell>
+        <Spell>
+          <Name>rising_sun_kick</Name>
+          <Color>1275/1811</Color>
+          <Key>4</Key>
+        </Spell>
+        <Spell>
+          <Name>spinning_crane_kick</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>tiger_palm</Name>
+          <Color>2425/899</Color>
+          <Key>2</Key>
+        </Spell>
+        <Spell>
+          <Name>jab</Name>
+          <Color>1429/779</Color>
+          <Key>1</Key>
+        </Spell>
+        <Spell>
+          <Name>blackout_kick</Name>
+          <Color>1985/1609</Color>
+          <Key>3</Key>
+        </Spell>
+        <Spell>
+          <Name>rushing_jade_wind</Name>
+          <Color>2075/2111</Color>
+          <Key>5</Key>
+        </Spell>
+        <Spell>
+          <Name>tigereye_brew</Name>
+          <Color>1383/1479</Color>
+          <Key>9</Key>
+        </Spell>
+        <Spell>
+          <Name>energizing_brew</Name>
+          <Color>1391/1265</Color>
+          <Key>0</Key>
+        </Spell>
+        <Spell>
+          <Name>zen_sphere</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>fistof fury</Name>
+          <Color>1791/969</Color>
+          <Key>8</Key>
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+      </Spells>
+    </WarcraftClass>
+  </ClassList>
+</ItemListItems>

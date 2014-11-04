@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<ItemListItems xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SelectedItem>Destro Lock</SelectedItem>
+  <ClassList>
+    <WarcraftClass>
+      <Name>Destro Lock</Name>
+      <Spells>
+        <Spell>
+          <Name>conflagrate</Name>
+          <Color>1461/1591</Color>
+          <Key>2</Key>
+        </Spell>
+        <Spell>
+          <Name>curse_of_the_elements</Name>
+          <Color>2341/1759</Color>
+          <Key>8</Key>
+        </Spell>
+        <Spell>
+          <Name>shadowburn</Name>
+          <Color>1727/1139</Color>
+          <Key>5</Key>
+        </Spell>
+        <Spell>
+          <Name>immolate</Name>
+          <Color>1277/1877</Color>
+          <Key>1</Key>
+        </Spell>
+        <Spell>
+          <Name>chaos_bolt</Name>
+          <Color>1511/1313</Color>
+          <Key>4</Key>
+        </Spell>
+        <Spell>
+          <Name>rain_of_fire_aftermath</Name>
+          <Color>1327/945</Color>
+          <Key>6</Key>
+        </Spell>
+        <Spell>
+          <Name>fire_and_brimstone</Name>
+          <Color>1283/955</Color>
+          <Key>7</Key>
+        </Spell>
+        <Spell>
+          <Name>fel_flame</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>incinerate</Name>
+          <Color>1607/1365</Color>
+          <Key>3</Key>
+        </Spell>
+        <Spell>
+          <Name>havoc</Name>
+          <Color>1337/765</Color>
+          <Key>9</Key>
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+      </Spells>
+    </WarcraftClass>
+  </ClassList>
+</ItemListItems>

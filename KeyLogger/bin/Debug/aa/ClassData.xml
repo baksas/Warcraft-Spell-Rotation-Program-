@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<ItemListItems xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SelectedItem />
+  <ClassList>
+    <WarcraftClass>
+      <Name>Shaman Elemental</Name>
+      <Spells>
+        <Spell>
+          <Name>Flame Shock</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Lava Burst</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Earth Shock</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Searing Totem</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Lightning Bolt</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Elemental Blast</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Ascendance</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Unleash Elements</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Chain Lightning</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Thunderstorm</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Magma Totem</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Lightning Shield</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Flametongue Weapon</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Fire Elemental Totem</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>Earth Elemental Totem</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+      </Spells>
+    </WarcraftClass>
+    <WarcraftClass>
+      <Name>Shaman Enchancement</Name>
+      <Spells>
+        <Spell>
+          <Name>Searing Totem</Name>
+          <Color>1495/1633</Color>
+          <Key>0</Key>
+        </Spell>
+        <Spell>
+          <Name>Lightning Bolt</Name>
+          <Color>2755/2121</Color>
+          <Key>5</Key>
+        </Spell>
+        <Spell>
+          <Name>Stormstrike</Name>
+          <Color>1845/1777</Color>
+          <Key>3</Key>
+        </Spell>
+        <Spell>
+          <Name>Stormblast</Name>
+          <Color>1727/1119</Color>
+          <Key>3</Key>
+        </Spell>
+        <Spell>
+          <Name>Unleash Elements</Name>
+          <Color>1791/1551</Color>
+          <Key>4</Key>
+        </Spell>
+        <Spell>
+          <Name>Lava Lash</Name>
+          <Color>1311/1429</Color>
+          <Key>2</Key>
+        </Spell>
+        <Spell>
+          <Name>Flame Shock</Name>
+          <Color>1373/821</Color>
+          <Key>1</Key>
+        </Spell>
+        <Spell>
+          <Name>Earth Shock</Name>
+          <Color>1575/765</Color>
+          <Key>8</Key>
+        </Spell>
+        <Spell>
+          <Name>Elemental Blast</Name>
+          <Color>2497/927</Color>
+          <Key>3</Key>
+        </Spell>
+        <Spell>
+          <Name>Fire Nova</Name>
+          <Color>1291/1219</Color>
+          <Key>7</Key>
+        </Spell>
+        <Spell>
+          <Name>Chain Lightning</Name>
+          <Color>1893/1139</Color>
+          <Key>6</Key>
+        </Spell>
+        <Spell>
+          <Name>Magma Totem</Name>
+          <Color>1313/1295</Color>
+          <Key>^+{F6}</Key>
+        </Spell>
+        <Spell>
+          <Name>Lightning Shield</Name>
+          <Color>1903/831</Color>
+          <Key>9</Key>
+        </Spell>
+        <Spell>
+          <Name>Windfury Weapon</Name>
+          <Color>2417/1335</Color>
+          <Key>^+{F7}</Key>
+        </Spell>
+        <Spell>
+          <Name>Flametongue Weapon</Name>
+          <Color>1915/1335</Color>
+          <Key>^+{F7}</Key>
+        </Spell>
+        <Spell>
+          <Name>Ascendance</Name>
+          <Color>1999/1931</Color>
+          <Key>^+{F10}</Key>
+        </Spell>
+        <Spell>
+          <Name>Feral Spirit </Name>
+          <Color>1389/993</Color>
+          <Key>^+{F9}</Key>
+        </Spell>
+        <Spell>
+          <Name>Fire Elemental Totem</Name>
+          <Color>1665/1107</Color>
+          <Key>^+{F11}</Key>
+        </Spell>
+        <Spell>
+          <Name>EArth elemental</Name>
+          <Color>1517/1299</Color>
+          <Key>^+{F12}</Key>
+        </Spell>
+      </Spells>
+    </WarcraftClass>
+    <WarcraftClass>
+      <Name>shadow</Name>
+      <Spells>
+        <Spell>
+          <Name>0</Name>
+          <Color>2677/1859</Color>
+          <Key>0</Key>
+        </Spell>
+        <Spell>
+          <Name>6</Name>
+          <Color>1655/969</Color>
+          <Key>6</Key>
+        </Spell>
+        <Spell>
+          <Name>3</Name>
+          <Color>1617/1833</Color>
+          <Key>3</Key>
+        </Spell>
+        <Spell>
+          <Name>2</Name>
+          <Color>1629/1705</Color>
+          <Key>2</Key>
+        </Spell>
+        <Spell>
+          <Name>8</Name>
+          <Color>1861/1493</Color>
+          <Key>8</Key>
+        </Spell>
+        <Spell>
+          <Name>5</Name>
+          <Color>2453/1629</Color>
+          <Key>5</Key>
+        </Spell>
+        <Spell>
+          <Name>9</Name>
+          <Color>1431/1371</Color>
+          <Key>9</Key>
+        </Spell>
+        <Spell>
+          <Name>7</Name>
+          <Color>1653/783</Color>
+          <Key>7</Key>
+        </Spell>
+        <Spell>
+          <Name>4</Name>
+          <Color>1617/1833</Color>
+          <Key>4</Key>
+        </Spell>
+        <Spell>
+          <Name>^+{F6}</Name>
+          <Color>1681/813</Color>
+          <Key>^+{F6}</Key>
+        </Spell>
+        <Spell>
+          <Name>^+{F7}</Name>
+          <Color>2315/2085</Color>
+          <Key>^+{F7}</Key>
+        </Spell>
+        <Spell>
+          <Name>1</Name>
+          <Color>1847/921</Color>
+          <Key>1</Key>
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+      </Spells>
+    </WarcraftClass>
+    <WarcraftClass>
+      <Name>Destro Lock</Name>
+      <Spells>
+        <Spell>
+          <Name>conflagrate</Name>
+          <Color>1461/1591</Color>
+          <Key>2</Key>
+        </Spell>
+        <Spell>
+          <Name>curse_of_the_elements</Name>
+          <Color>2341/1759</Color>
+          <Key>8</Key>
+        </Spell>
+        <Spell>
+          <Name>shadowburn</Name>
+          <Color>1727/1139</Color>
+          <Key>5</Key>
+        </Spell>
+        <Spell>
+          <Name>immolate</Name>
+          <Color>1277/1877</Color>
+          <Key>1</Key>
+        </Spell>
+        <Spell>
+          <Name>chaos_bolt</Name>
+          <Color>1511/1313</Color>
+          <Key>4</Key>
+        </Spell>
+        <Spell>
+          <Name>rain_of_fire_aftermath</Name>
+          <Color>1327/945</Color>
+          <Key>6</Key>
+        </Spell>
+        <Spell>
+          <Name>fire_and_brimstone</Name>
+          <Color>1283/955</Color>
+          <Key>7</Key>
+        </Spell>
+        <Spell>
+          <Name>fel_flame</Name>
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name>incinerate</Name>
+          <Color>1607/1365</Color>
+          <Key>3</Key>
+        </Spell>
+        <Spell>
+          <Name>havoc</Name>
+          <Color>1337/765</Color>
+          <Key>9</Key>
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+        <Spell>
+          <Name />
+          <Color />
+          <Key />
+        </Spell>
+      </Spells>
+    </WarcraftClass>
+  </ClassList>
+</ItemListItems>
