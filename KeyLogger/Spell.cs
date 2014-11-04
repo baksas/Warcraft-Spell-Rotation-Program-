@@ -8,5 +8,6 @@ namespace WacraftColorProgram
         public String Name { set; get; }
         public String Color { set; get; }
         public String Key { set; get; }
+        //hhh
     }
 }
