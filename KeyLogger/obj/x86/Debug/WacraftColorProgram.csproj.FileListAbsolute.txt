@@ -18,3 +18,13 @@ C:\Users\Marius\Dropbox\KeyLogger\WacraftColorProgram\KeyLogger\obj\x86\Debug\Wa
 C:\Users\Marius\Dropbox\KeyLogger\WacraftColorProgram\KeyLogger\obj\x86\Debug\WacraftColorProgram.pdb
 C:\Users\Marius\Dropbox\KeyLogger\WacraftColorProgram\KeyLogger\obj\x86\Debug\WacraftColorProgram.FrmMain.resources
 C:\Users\Marius\Dropbox\KeyLogger\WacraftColorProgram\KeyLogger\obj\x86\Debug\WacraftColorProgram.ClassItem.resources
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\bin\Debug\WacraftColorProgram.exe.config
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\bin\Debug\WacraftColorProgram.exe
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\bin\Debug\WacraftColorProgram.pdb
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\obj\x86\Debug\WacraftColorProgram.csprojResolveAssemblyReference.cache
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\obj\x86\Debug\WacraftColorProgram.ClassItem.resources
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\obj\x86\Debug\WacraftColorProgram.FrmMain.resources
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\obj\x86\Debug\WacraftColorProgram.Properties.Resources.resources
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\obj\x86\Debug\WacraftColorProgram.csproj.GenerateResource.Cache
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\obj\x86\Debug\WacraftColorProgram.exe
+C:\Users\lt0mbgs\Source\Repos\Warcraft-Spell-Rotation-Program-\KeyLogger\obj\x86\Debug\WacraftColorProgram.pdb

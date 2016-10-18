@@ -1,64 +1,64 @@
 <?xml version="1.0"?>
 <ItemListItems xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SelectedItem>shadow</SelectedItem>
+  <SelectedItem />
   <ClassList>
     <WarcraftClass>
       <Name>shadow</Name>
       <Spells>
         <Spell>
           <Name>111</Name>
-          <Color>1343/885</Color>
+          <Color>2711/2291/1733</Color>
           <Key>1</Key>
         </Spell>
         <Spell>
           <Name>21</Name>
-          <Color>1491/1763</Color>
+          <Color>2715/949/2205</Color>
           <Key>2</Key>
         </Spell>
         <Spell>
-          <Name>31</Name>
-          <Color>1519/1019</Color>
+          <Name>234</Name>
+          <Color>1275/9491/17331</Color>
           <Key>3</Key>
         </Spell>
         <Spell>
-          <Name>41</Name>
-          <Color>2045/1901</Color>
-          <Key>4</Key>
+          <Name />
+          <Color />
+          <Key />
         </Spell>
         <Spell>
-          <Name>51</Name>
-          <Color>2769/993</Color>
-          <Key>5</Key>
+          <Name />
+          <Color />
+          <Key />
         </Spell>
         <Spell>
-          <Name>61</Name>
-          <Color>1609/1285</Color>
-          <Key>6</Key>
+          <Name />
+          <Color />
+          <Key />
         </Spell>
         <Spell>
-          <Name>71</Name>
-          <Color>1891/1065</Color>
-          <Key>7</Key>
+          <Name />
+          <Color />
+          <Key />
         </Spell>
         <Spell>
-          <Name>81</Name>
-          <Color>1385/1615</Color>
-          <Key>8</Key>
+          <Name />
+          <Color />
+          <Key />
         </Spell>
         <Spell>
-          <Name>91</Name>
-          <Color>2245/2207</Color>
-          <Key>9</Key>
+          <Name />
+          <Color />
+          <Key />
         </Spell>
         <Spell>
-          <Name>01</Name>
-          <Color>2561/1953</Color>
-          <Key>0</Key>
+          <Name />
+          <Color />
+          <Key />
         </Spell>
         <Spell>
-          <Name>ctrl+f71</Name>
-          <Color>1677/869</Color>
-          <Key>^+{F7}</Key>
+          <Name />
+          <Color />
+          <Key />
         </Spell>
         <Spell>
           <Name />

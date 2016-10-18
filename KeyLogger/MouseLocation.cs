@@ -9,6 +9,9 @@ namespace WacraftColorProgram
         public int YCcoordinateSingle { set; get; }
         public int XcoordinateAoe { set; get; }
         public int YcoordinateAoe { set; get; }
+        public int XcoordinateThird { set; get; }
+        public int YcoordinateThird { set; get; }
+
         private const string Filename = "mouselocation.xml";
 
         public void Save()

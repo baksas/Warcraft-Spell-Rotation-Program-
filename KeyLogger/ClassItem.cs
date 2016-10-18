@@ -29,9 +29,13 @@ namespace WacraftColorProgram
             {
                 foreach (var item in _listItems.ClassList)
                 {
-                    if (item.Name.Equals(_listboxItems.SelectedItem.ToString()))
+
+                    if (_listboxItems.SelectedItem != null)
                     {
-                        SetFieldValues(item);
+                        if (item.Name.Equals(_listboxItems.SelectedItem.ToString()))
+                        {
+                            SetFieldValues(item);
+                        }
                     }
                 }
             }
@@ -86,8 +90,7 @@ namespace WacraftColorProgram
 
         private void CpColor_Click(object sender, EventArgs e)
         {
-            SendKeys.SendWait("`");
-            colorCodeTextBox.Text = _mainform.ColorCodeSingle + Resources.ClassItem_CpColor_Click__ + _mainform.ColorCodeAoe;
+            colorCodeTextBox.Text = _mainform.ColorCodeFirst + Resources.ClassItem_CpColor_Click__ + _mainform.ColorCodeSecond + Resources.ClassItem_CpColor_Click__ + _mainform.ColorCodeThird;
         }
 
         private List<Spell> GetSpells()
@@ -240,133 +243,133 @@ namespace WacraftColorProgram
         {
             if (ColorCode1.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode1.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode1.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode2_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode2.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode2.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode2.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode3_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode3.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode3.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode3.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode4_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode4.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode4.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode4.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode5_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode5.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode5.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode5.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode6_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode6.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode6.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode6.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode7_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode7.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode7.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode7.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode8_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode8.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode8.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode8.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode9_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode9.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode9.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode9.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode10_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode10.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode10.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode10.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode11_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode11.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode11.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode11.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode12_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode12.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode12.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode12.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode13_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode13.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode13.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode13.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode14_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode14.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode14.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode14.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode15_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode15.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode15.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode15.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode16_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode16.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode16.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode16.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode17_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode17.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode17.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode17.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode18_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode18.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode18.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode18.Text = _mainform.ColorCodeFirst + @"/" + _mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
 
         private void ColorCode19_TextChanged(object sender, EventArgs e)
         {
             if (ColorCode19.Text.Length != 1) return;
             SendKeys.SendWait("`");
-            ColorCode19.Text = _mainform.ColorCodeSingle + @"/" + _mainform.ColorCodeAoe;
+            ColorCode19.Text = _mainform.ColorCodeFirst + @"/" +_mainform.ColorCodeSecond + @"/" + _mainform.ColorCodeThird;
         }
     }
 }

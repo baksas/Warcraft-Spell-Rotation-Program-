@@ -18,11 +18,18 @@ namespace WacraftColorProgram
         private int _singleMouseY;
         private int _aoeMouseX;
         private int _aoeMouseY;
+        private int _thirdMouseX;
+        private int _thirdMouseY;
+
+
         private ItemListItems _classItems;
         MouseLocation _mouselocation;
-        private Boolean _singleTargetButtonPressed;
-        public string ColorCodeSingle { set; get; }
-        public string ColorCodeAoe { set; get; }
+        private Boolean _firstTargetButtonPressed;
+        private Boolean _secondTargetButtonPressed;
+        private Boolean _thirdTargetButtonPressed;
+        public string ColorCodeFirst { set; get; }
+        public string ColorCodeSecond { set; get; }
+        public string ColorCodeThird { set; get; }
 
         public Hashtable LogData { get; set; }
 
@@ -49,6 +56,10 @@ namespace WacraftColorProgram
 
                 _aoeMouseX = _mouselocation.XcoordinateAoe;
                 _aoeMouseY = _mouselocation.YcoordinateAoe;
+
+                _thirdMouseX = _mouselocation.XcoordinateThird;
+                _thirdMouseY = _mouselocation.YcoordinateThird;
+
             }
 
             ItemListItems items = ItemListItems.Load();
@@ -108,6 +119,17 @@ namespace WacraftColorProgram
                 _mouselocation.Save();
             }
 
+            if (ThirdCheckBox.Checked && e.Clicks > 0)
+            {
+                _thirdMouseY = e.Y;
+                _thirdMouseX = e.X;
+                ThirdCheckBox.Checked = false;
+
+                _mouselocation.XcoordinateThird = _thirdMouseX;
+                _mouselocation.YcoordinateThird = _thirdMouseY;
+                _mouselocation.Save();
+            }
+
             if (editMousePosition.Checked)
             {
 
@@ -122,19 +144,45 @@ namespace WacraftColorProgram
                 _aoeMouseX = e.X;
             }
 
+
+            if (ThirdCheckBox.Checked)
+            {
+
+                _thirdMouseY = e.Y;
+                _thirdMouseX = e.X;
+            }
+
             mousePositionTop.Text = String.Format("X:{0},Y={1}", e.X, e.Y);
             mouseSinglePositionSaved.Text = String.Format("X:{0},Y={1}", _singleMouseX, _singleMouseY);
             AoeMousePositionSaved.Text = String.Format("X:{0},Y={1}", _aoeMouseX, _aoeMouseY);
+            ThirdMousePositionSaved.Text = String.Format("X:{0},Y={1}", _thirdMouseX, _thirdMouseY);
         }
 
         public void HookerKeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!e.KeyChar.ToString(CultureInfo.InvariantCulture).Equals("`") &&
-                !e.KeyChar.ToString(CultureInfo.InvariantCulture).Equals("'")) return;
+
+            _firstTargetButtonPressed = false;
+            _secondTargetButtonPressed = false;
+            _thirdTargetButtonPressed = false;
+
+            if (!e.KeyChar.ToString(CultureInfo.InvariantCulture).Equals("`") && !e.KeyChar.ToString(CultureInfo.InvariantCulture).Equals("'") && !e.KeyChar.ToString(CultureInfo.InvariantCulture).Equals(";")) return;
+
             if (e.KeyChar.ToString(CultureInfo.InvariantCulture).Equals("`"))
             {
-                _singleTargetButtonPressed = true;
+                _firstTargetButtonPressed = true;
             }
+
+            if (e.KeyChar.ToString(CultureInfo.InvariantCulture).Equals("'"))
+            {
+                _secondTargetButtonPressed = true;
+            }
+
+            if (e.KeyChar.ToString(CultureInfo.InvariantCulture).Equals(";"))
+            {
+                _thirdTargetButtonPressed = true;
+            }
+
+
             var thread = new Thread(PictureAction);
             thread.Start(this);
             thread.Join();
@@ -147,54 +195,88 @@ namespace WacraftColorProgram
         {
             var parameter = (FrmMain)dd;
 
-            if (parameter._singleTargetButtonPressed || parameter.EditModeCheckbox.Checked)
-            {
-                var boundsSingle = new Rectangle(_singleMouseX - 1, _singleMouseY + 1, 3, 3);
-                var bitmapSingle = new Bitmap(boundsSingle.Width, boundsSingle.Height);
-                var g = Graphics.FromImage(bitmapSingle);
-                g.CopyFromScreen(boundsSingle.Left, boundsSingle.Top, 0, 0, bitmapSingle.Size, CopyPixelOperation.SourceCopy);
-                var c = bitmapSingle.GetPixel(1, 1);
-                int codeSingle = c.A * 5 + c.B * 4 + c.G * 2;
-                ColorCodeSingle = Convert.ToString(codeSingle);
-                ColorCodeAoe = "999999999999";
-                parameter._singleTargetButtonPressed = false;
-            }
-            else
-            {
-                var boundsAoe = new Rectangle(_aoeMouseX - 1, _aoeMouseY + 1, 3, 3);
-                var bitmapAoe = new Bitmap(boundsAoe.Width, boundsAoe.Height);
-                var g1 = Graphics.FromImage(bitmapAoe);
-                g1.CopyFromScreen(boundsAoe.Left, boundsAoe.Top, 0, 0, bitmapAoe.Size, CopyPixelOperation.SourceCopy);
-                var b = bitmapAoe.GetPixel(1, 1);
-                var codeAoe = b.A * 3 + b.B * 2 + b.G * 4;
-                ColorCodeAoe = Convert.ToString(codeAoe);
-                if (!EditModeCheckbox.Checked)
-                {
-                    ColorCodeSingle = "999999999999999";
-                }
-                
-            }
             if (parameter.EditModeCheckbox.Checked)
             {
-                var boundsAoe = new Rectangle(_aoeMouseX - 1, _aoeMouseY + 1, 3, 3);
-                var bitmapAoe = new Bitmap(boundsAoe.Width, boundsAoe.Height);
-                var g1 = Graphics.FromImage(bitmapAoe);
-                g1.CopyFromScreen(boundsAoe.Left, boundsAoe.Top, 0, 0, bitmapAoe.Size, CopyPixelOperation.SourceCopy);
-                var b = bitmapAoe.GetPixel(1, 1);
-                var codeAoe = b.A * 3 + b.B * 2 + b.G * 4;
-                ColorCodeAoe = Convert.ToString(codeAoe);
+                FirstColorRead();
+                SecondColorRead();
+                ThirdColorRead();
+                return;
+            }
+            
+            if (parameter._firstTargetButtonPressed)
+            {
+                FirstColorRead();
+                PressSpell(parameter, ColorCodeFirst, 0);
+                return;
             }
 
+            if (parameter._secondTargetButtonPressed)
+            {
+                SecondColorRead();
+                PressSpell(parameter, ColorCodeSecond, 1);
+                return;
+            }
+
+            if (parameter._thirdTargetButtonPressed)
+            {
+                ThirdColorRead();
+                PressSpell(parameter, ColorCodeThird, 2);
+                return;
+            }
+        }
+
+        private void ThirdColorRead()
+        {
+            var boundsAoe = new Rectangle(_thirdMouseX - 1, _thirdMouseY + 1, 3, 3);
+            var bitmapAoe = new Bitmap(boundsAoe.Width, boundsAoe.Height);
+            var g1 = Graphics.FromImage(bitmapAoe);
+            g1.CopyFromScreen(boundsAoe.Left, boundsAoe.Top, 0, 0, bitmapAoe.Size, CopyPixelOperation.SourceCopy);
+            var b = bitmapAoe.GetPixel(1, 1);
+            var codeAoe = b.A * 3 + b.B * 2 + b.G * 4;
+            ColorCodeThird = Convert.ToString(codeAoe);
+        }
+
+        private void SecondColorRead()
+        {
+            var boundsAoe = new Rectangle(_aoeMouseX - 1, _aoeMouseY + 1, 3, 3);
+            var bitmapAoe = new Bitmap(boundsAoe.Width, boundsAoe.Height);
+            var g1 = Graphics.FromImage(bitmapAoe);
+            g1.CopyFromScreen(boundsAoe.Left, boundsAoe.Top, 0, 0, bitmapAoe.Size, CopyPixelOperation.SourceCopy);
+            var b = bitmapAoe.GetPixel(1, 1);
+            var codeAoe = b.A * 3 + b.B * 2 + b.G * 4;
+            ColorCodeSecond = Convert.ToString(codeAoe);
+        }
+
+        private void FirstColorRead()
+        {
+            var boundsSingle = new Rectangle(_singleMouseX - 1, _singleMouseY + 1, 3, 3);
+            var bitmapSingle = new Bitmap(boundsSingle.Width, boundsSingle.Height);
+            var g = Graphics.FromImage(bitmapSingle);
+            g.CopyFromScreen(boundsSingle.Left, boundsSingle.Top, 0, 0, bitmapSingle.Size, CopyPixelOperation.SourceCopy);
+            var c = bitmapSingle.GetPixel(1, 1);
+            int codeSingle = c.A * 5 + c.B * 4 + c.G * 2;
+            ColorCodeFirst = Convert.ToString(codeSingle);
+        }
+
+        private static void PressSpell(FrmMain parameter, String code, int button)
+        {
             foreach (WarcraftClass wcClass in parameter._classItems.ClassList)
             {
-                 foreach (Spell spell in wcClass.Spells)
-                 {
-                     if (!spell.Color.Contains(ColorCodeSingle) && !spell.Color.Contains(ColorCodeAoe)) continue;
-                     if (!parameter.EditModeCheckbox.Checked)
-                     {
-                         SendKeys.SendWait(spell.Key);
-                     }
-                 }
+                foreach (Spell spell in wcClass.Spells)
+                {
+                    string[] words = spell.Color.Split('/');
+                    
+                    if (words.Length == 0 || words.Length <= button)
+                    {
+                        continue;
+                    }
+
+                    if (!code.Equals(words[button])) continue;
+                    if (!parameter.EditModeCheckbox.Checked)
+                    {
+                        SendKeys.SendWait(spell.Key);
+                    }
+                }
             }
         }
 
@@ -240,9 +322,23 @@ namespace WacraftColorProgram
         {
             var ci = new ClassItem(_classItems, ItemList, true, this);
             ci.Show();
-            
+
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

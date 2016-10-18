@@ -47,6 +47,9 @@ namespace WacraftColorProgram
             this.AoeMousePositionSaved = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.EditModeCheckbox = new System.Windows.Forms.CheckBox();
+            this.ThirdMousePositionSaved = new System.Windows.Forms.Label();
+            this.ThirdCheckBox = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -143,7 +146,7 @@ namespace WacraftColorProgram
             // AoeLabel
             // 
             this.AoeLabel.AutoSize = true;
-            this.AoeLabel.Location = new System.Drawing.Point(18, 66);
+            this.AoeLabel.Location = new System.Drawing.Point(18, 54);
             this.AoeLabel.Name = "AoeLabel";
             this.AoeLabel.Size = new System.Drawing.Size(26, 13);
             this.AoeLabel.TabIndex = 24;
@@ -152,7 +155,7 @@ namespace WacraftColorProgram
             // AoeCheckBox
             // 
             this.AoeCheckBox.AutoSize = true;
-            this.AoeCheckBox.Location = new System.Drawing.Point(147, 65);
+            this.AoeCheckBox.Location = new System.Drawing.Point(147, 53);
             this.AoeCheckBox.Name = "AoeCheckBox";
             this.AoeCheckBox.Size = new System.Drawing.Size(15, 14);
             this.AoeCheckBox.TabIndex = 25;
@@ -161,7 +164,7 @@ namespace WacraftColorProgram
             // AoeMousePositionSaved
             // 
             this.AoeMousePositionSaved.AutoSize = true;
-            this.AoeMousePositionSaved.Location = new System.Drawing.Point(70, 66);
+            this.AoeMousePositionSaved.Location = new System.Drawing.Point(70, 54);
             this.AoeMousePositionSaved.Name = "AoeMousePositionSaved";
             this.AoeMousePositionSaved.Size = new System.Drawing.Size(0, 13);
             this.AoeMousePositionSaved.TabIndex = 26;
@@ -184,11 +187,43 @@ namespace WacraftColorProgram
             this.EditModeCheckbox.TabIndex = 28;
             this.EditModeCheckbox.UseVisualStyleBackColor = true;
             // 
+            // ThirdMousePositionSaved
+            // 
+            this.ThirdMousePositionSaved.AutoSize = true;
+            this.ThirdMousePositionSaved.Location = new System.Drawing.Point(70, 77);
+            this.ThirdMousePositionSaved.Name = "ThirdMousePositionSaved";
+            this.ThirdMousePositionSaved.Size = new System.Drawing.Size(0, 13);
+            this.ThirdMousePositionSaved.TabIndex = 31;
+            this.ThirdMousePositionSaved.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // ThirdCheckBox
+            // 
+            this.ThirdCheckBox.AutoSize = true;
+            this.ThirdCheckBox.Location = new System.Drawing.Point(147, 76);
+            this.ThirdCheckBox.Name = "ThirdCheckBox";
+            this.ThirdCheckBox.Size = new System.Drawing.Size(15, 14);
+            this.ThirdCheckBox.TabIndex = 30;
+            this.ThirdCheckBox.UseVisualStyleBackColor = true;
+            this.ThirdCheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Third";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(349, 381);
+            this.Controls.Add(this.ThirdMousePositionSaved);
+            this.Controls.Add(this.ThirdCheckBox);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.EditModeCheckbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AoeMousePositionSaved);
@@ -235,7 +270,9 @@ namespace WacraftColorProgram
         private Label AoeMousePositionSaved;
         private Label label1;
         private CheckBox EditModeCheckbox;
-
+        private Label ThirdMousePositionSaved;
+        private CheckBox ThirdCheckBox;
+        private Label label3;
     }
 }
 

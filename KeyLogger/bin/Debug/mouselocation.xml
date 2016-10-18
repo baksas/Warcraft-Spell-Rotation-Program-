@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MouseLocation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <XCoordinateSingle>548</XCoordinateSingle>
-  <YCcoordinateSingle>1128</YCcoordinateSingle>
-  <XcoordinateAoe>596</XcoordinateAoe>
-  <YcoordinateAoe>1131</YcoordinateAoe>
+  <XCoordinateSingle>2281</XCoordinateSingle>
+  <YCcoordinateSingle>702</YCcoordinateSingle>
+  <XcoordinateAoe>2569</XcoordinateAoe>
+  <YcoordinateAoe>772</YcoordinateAoe>
+  <XcoordinateThird>2934</XcoordinateThird>
+  <YcoordinateThird>773</YcoordinateThird>
 </MouseLocation>
